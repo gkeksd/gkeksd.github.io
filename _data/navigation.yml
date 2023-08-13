@@ -20,3 +20,5 @@ sidebar-category:
     children:
       - title: "일반"
         url: "/categories/common"
+      - title: "코딩"
+        url: "/categories/codding"
