@@ -1,7 +1,7 @@
 ---
 layout: post
 date: '2023-08-12 18:39:38 +0900'
-categories: jekyll update
+categories: 일반
 comments: true
 ---
 안녕하세요. 깃허브 블로그로 난생 처음 블로그에 입문하게 되었습니다.
