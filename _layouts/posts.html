@@ -21,6 +21,14 @@ layout: archive
   <section id="{{ year.name }}" class="taxonomy__section">
     <h2 class="archive__subtitle">{{ year.name }}</h2>
     <div class="entries-{{ entries_layout }}">
+      <script src="https://utteranc.es/client.js"
+        repo="gkeksd/gkeksd.github.io"
+        issue-term="pathname"
+        label="comment"
+        theme="icy-dark"
+        crossorigin="anonymous"
+        async>
+      </script>
       {% for post in year.items %}
         {% include archive-single.html type=entries_layout %}
       {% endfor %}
