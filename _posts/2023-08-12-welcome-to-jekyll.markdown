@@ -1,4 +1,5 @@
 ---
+author_profile: true
 layout: post
 date: '2023-08-12 18:39:38 +0900'
 categories:
