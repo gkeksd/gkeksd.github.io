@@ -21,7 +21,7 @@ title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "정준교"
 description              : "역사, 코딩 등 여러가지 올리는 블로그"
-url                      : "gkeksd.github.io"
+url                      : "https://gkeksd.github.io/"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "gkeksd/gkeksd.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
