@@ -5,6 +5,8 @@ date: '2023-08-12 18:39:38 +0900'
 categories:
   - 일반
 comments: true
+sidebar:
+  nav: "main"
 toc: true # 우측에 본문 목차 네비게이션 생성
 ---
 안녕하세요. 깃허브 블로그로 난생 처음 블로그에 입문하게 되었습니다.
