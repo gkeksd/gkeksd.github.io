@@ -2,7 +2,7 @@
 layout: post
 date: '2023-08-12 18:39:38 +0900'
 categories:
-  - common
+  - 일반
 comments: true
 toc: true # 우측에 본문 목차 네비게이션 생성
 ---
