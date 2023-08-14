@@ -18,3 +18,8 @@ main:
 counts:
   - title: "카테고리"
     url: /categories
+    children:
+      - title: "일반"
+        url: "/categories/common"
+      - title: "코딩"
+        url: "/categories/codding"
