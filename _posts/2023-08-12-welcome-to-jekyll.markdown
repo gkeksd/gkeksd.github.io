@@ -6,7 +6,7 @@ categories:
   - common
 comments: true
 sidebar:
-  nav: "main"
+  nav: "counts"
 toc: true # 우측에 본문 목차 네비게이션 생성
 title: "블로그 인사글"
 ---
