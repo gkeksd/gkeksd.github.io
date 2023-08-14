@@ -3,7 +3,7 @@ author_profile: true
 layout: single
 date: '2023-08-12 18:39:38 +0900'
 categories:
-  - 일반
+  - common
 comments: true
 sidebar:
   nav: "counts"
