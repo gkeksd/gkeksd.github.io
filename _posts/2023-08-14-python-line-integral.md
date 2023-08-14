@@ -8,6 +8,7 @@ comments: true
 sidebar:
   nav: "main"
 toc: true # 우측에 본문 목차 네비게이션 생성
+toc_sticky: false
 title: "파이썬을 이용한 선적분(line integral) 계산기 구현"
 ---
 ## 1.개요 및 전체 코드
