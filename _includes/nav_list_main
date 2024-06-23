@@ -33,8 +33,8 @@
             </ul>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "Python" %}
-                        <li><a href="/categories/stl" class="">C++ STL & 표준 ({{category[1].size}})</a></li>
+                    {% if category[0] == "C++" %}
+                        <li><a href="/categories/cpp" class="">C++ ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
