@@ -1,5 +1,5 @@
 ---
-title: "C++" # 카테고리 이름
+title: "cpp" # 카테고리 이름
 layout: archive
 permalink: /categories/cpp # url
 author_profile: true
