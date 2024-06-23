@@ -3,7 +3,7 @@ author_profile: true
 layout: single
 date: '2023-09-04 18:26:38 +0900'
 categories:
-  - CED
+  - 창의적 공학설계
 comments: true
 sidebar:
   nav: "main"

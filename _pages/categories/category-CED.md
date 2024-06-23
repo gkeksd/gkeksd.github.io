@@ -3,7 +3,7 @@ title: "창의적 공학설계"
 layout: archive
 permalink: categories/CED
 author_profile: true
-taxonomy: CED
+taxonomy: 창의적 공학설계
 sidebar_main: true
 nav: "Categories"
 ---

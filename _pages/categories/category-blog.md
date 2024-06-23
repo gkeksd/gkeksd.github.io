@@ -1,9 +1,9 @@
 ---
-title: "blog" # 카테고리 이름
+title: "블로그" # 카테고리 이름
 layout: archive
 permalink: /categories/blog # url
 author_profile: true
-taxonomy: blog
+taxonomy: 블로그
 sidebar_main: true
 nav: "categories"
 ---
