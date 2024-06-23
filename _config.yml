@@ -65,9 +65,10 @@ search_provider          : algolia
 lunr:
   search_within_pages    : # true, false (default)
 algolia:
-  application_id         : GBLWJS5MJV
-  index_name             : jk_blog
-  search_only_api_key    : 4b2b7869ab18319592c2f3baab501ee2
+  application_id         : "GBLWJS5MJV"
+  index_name             : "jk_blog"
+  search_only_api_key    : "4b2b7869ab18319592c2f3baab501ee2"
+  api_key                : "b1cd46f0c73cc06f1547cc256e4e47e4"
   powered_by             : # true (default), false
 google:
   search_engine_id       : # YOUR_SEARCH_ENGINE_ID
