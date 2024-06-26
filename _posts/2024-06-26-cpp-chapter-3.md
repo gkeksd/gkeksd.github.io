@@ -33,7 +33,7 @@ cout << a;
 #### 리터럴 표현식
 다음의 예제 코드에서 각각 출력하는 대상들 및 공백 문자가 리터럴에 해당됨
 
-```cpp
+ ```cpp
 #include <iostream>
 using namespace std;
 
@@ -47,7 +47,7 @@ int main() {
 
 #### 괄호 표현식
 다음의 예제 코드에서 괄호에 묶인 부분이 괄호 표현식에 해당됨.
-```cpp
+ ```cpp
 #include <iostream>
 using namespace std;
 
