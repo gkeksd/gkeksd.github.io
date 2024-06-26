@@ -13,7 +13,7 @@ title: "객체지향 프로그래밍 - 포르잔 c++ 바이블: 2장"
 교재: 포르잔 C++ 바이블
 
 ## 프로그래밍 기본
-```
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -43,7 +43,7 @@ int main() {
  * 주석 해제: 사진의 오른쪽 원 안의 버튼. 주석에서 해제할 부분의 코드를 드래그 후 ctrl+k+u를 누르면 주석에서 해제됨
 
 ### namespace
-```
+```cpp
 namespace myNamespace = {
    void name1() = {
        cout << "name1" << endl;
@@ -77,7 +77,7 @@ using namespace::name2
  * 즉 할당 연산자 우변을 할당되는 값으로, 좌변을 값을 저장할 변수나 상수로 씀.
 
 #### 상수
-```
+```cpp
 const double pi = 3.141592
 ```
  * 값을 변경할 수 없도록 메모리에 저장하는 것
@@ -115,7 +115,7 @@ int라고 쓰며, 정수만을 제공하는 가장 기본적인 자료형이다.
 ### 캐릭터 자료형(character type)
 char라고 쓰며, 기본적으로는 정수 자료형의 일종이나 보통 한 글자의 문자열을 표현하는 데에도 많이 사용됨. 정식으로 문자열을 표기하는 것이 아니기에 아스키 코드에 등록된 문자만을 정수 형태로 변환해 저장함. 값을 참조하는 방법에 따라 char *, char[]도 존재.
 
-```
+```cpp
 char str1 = 'A'; 
 char str2 = str1 + 2; // C
 char str3 = str2 - 1; // B
@@ -136,7 +136,7 @@ char str4 = str1 + 3; // D
  * \\': 문장 안에 홑따옴표(')를 입력할 때 사용
 키보드의 엔터(enter)키의 모양은 과거 타자기 및 초창기 컴퓨터에서 다음 줄로 이동하기 위해 \n+\r을 입력해야 했던 시절의 잔재
 
- ### 불 자료형(bool data type)
+### 불 자료형(bool data type)
 참/거짓을 판단하는 자료형으로, bool로 선언. 0이 아닌 정수는 true로, 0은 false로 판정하며 문자열 true나 false일 경우에도 마찬가지. true 판정일 경우 1로, false 판정일 경우 0을 반환한다.
 
 예: bool x = 123;일 경우 x는 출력 시 true 판정되어 1로 출력됨
