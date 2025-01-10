@@ -8,5 +8,5 @@ sidebar_main: true
 nav: "categories"
 ---
 
-{% assign posts = site.categories.python %}
+{% assign posts = site.categories.cpp %}
 {% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}
