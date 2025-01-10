@@ -11,7 +11,6 @@ toc: true
 published: true
 title: "모던 C++ 주요 기법 정리"
 ---
-
 ## 1. 숫자 구분자
 ```cpp
 int val = 1000000;
