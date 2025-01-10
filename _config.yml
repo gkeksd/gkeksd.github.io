@@ -16,17 +16,18 @@ minimal_mistakes_skin    : "dirt" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "�׳� ���α�"
+title                    : "그냥 블로그"
 title_separator          : "|"
-subtitle                 : "������ ����"
+subtitle                 : ""
 name                     : "Joonkyo Jung"
-description              : "�׳� ����� ���л�"
+description              : "안녕하세요"
 url                      : "https://gkeksd.github.io/"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "gkeksd/gkeksd.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "/assets/images/computer.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
+future                   : true
 breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
 comments:
@@ -106,9 +107,9 @@ analytics:
 # Site Author
 author:
   name             : "JoonKyo Jung"
-  avatar           : "/assets/images/������.png"
-  bio              : "�ȳ��ϼ���"
-  location         : "���ѹα�, ����"
+  avatar           : "/assets/images/오액토.png"
+  bio              : "안녕하세요"
+  location         : "대한민국"
   email            :
   links:
     - label: "Email"
