@@ -3,7 +3,7 @@ author_profile: true
 layout: single
 date: '2024-06-24 17:20:00 +0900'
 categories:
-  - c++
+  - cpp
 comments: true
 sidebar:
   nav: "main"

@@ -1,7 +1,7 @@
 ---
 title: "창의적 공학설계"
 layout: archive
-permalink: categories/ced
+permalink: categories/CED
 author_profile: true
 taxonomy: 창의적 공학설계
 sidebar_main: true
