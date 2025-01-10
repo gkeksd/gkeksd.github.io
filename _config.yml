@@ -16,11 +16,11 @@ minimal_mistakes_skin    : "dirt" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "ê·¸ëƒ¥ ë¸”ë¡œê·?"
+title                    : "±×³É ºí·Î±×"
 title_separator          : "|"
-subtitle                 : "??œ ??? ì§??„±"
-name                     : "? •ì¤?êµ?"
-description              : "?—­?‚¬, ì½”ë”© ?“± ?—¬?Ÿ¬ê°?ì§? ?˜¬ë¦¬ëŠ” ë¸”ë¡œê·?"
+subtitle                 : "ÀÚÀ¯¿Í Áö¼º"
+name                     : "Joonkyo Jung"
+description              : "±×³É Æò¹üÇÑ ´ëÇĞ»ı"
 url                      : "https://gkeksd.github.io/"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "gkeksd/gkeksd.github.io"
@@ -107,9 +107,9 @@ analytics:
 # Site Author
 author:
   name             : "JoonKyo Jung"
-  avatar           : "/assets/images/?˜¤?•¡?† .png"
-  bio              : "ê·¸ëƒ¥ ?‰ë²”í•œ ????•™?ƒ"
-  location         : "????•œë¯¼êµ­, ?„œ?š¸"
+  avatar           : "/assets/images/¿À¾×Åä.png"
+  bio              : "¾È³çÇÏ¼¼¿ä"
+  location         : "´ëÇÑ¹Î±¹, ¼­¿ï"
   email            :
   links:
     - label: "Email"
