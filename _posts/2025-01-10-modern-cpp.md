@@ -8,6 +8,7 @@ comments: true
 sidebar:
   nav: "main"
 toc: true # 우측에 본문 목차 네비게이션 생성
+published: true
 title: "모던 C++ 주요 기법 정리"
 ---
 
