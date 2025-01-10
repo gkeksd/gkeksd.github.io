@@ -15,7 +15,7 @@
         <span href="/categories/common" class="nav__sub-title">일반</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "블로그" %}
+                    {% if category[0] == "blog" %}
                         <li><a href="/categories/blog" class="">블로그 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
@@ -41,7 +41,7 @@
         <span class="nav__sub-title">학문</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "창의적 공학설계" %}
+                    {% if category[0] == "CED" %}
                         <li><a href="/categories/CED" class="">창의적 공학설계 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}

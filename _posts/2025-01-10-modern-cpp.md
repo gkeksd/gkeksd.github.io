@@ -3,7 +3,7 @@ author_profile: true
 layout: single
 date: '2025-01-10 14:20:34 +0900'
 categories:
-  - c++
+  - cpp
 comments: true
 sidebar:
   nav: "main"
