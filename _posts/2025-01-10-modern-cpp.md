@@ -7,12 +7,12 @@ categories:
 comments: true
 sidebar:
   nav: "main"
-toc: true # ¿ìÃø¿¡ º»¹® ¸ñÂ÷ ³×ºñ°ÔÀÌ¼Ç »ı¼º
+toc: true
 published: true
-title: "¸ğ´ø C++ ÁÖ¿ä ±â¹ı Á¤¸®"
+title: "ëª¨ë˜ C++ ì£¼ìš” ê¸°ë²• ì •ë¦¬"
 ---
 
-## 1. ¼ıÀÚ ±¸ºĞÀÚ
+## 1. ìˆ«ì êµ¬ë¶„ì
 ```cpp
 int val = 1000000;
 int val_14 = 1'000'000;
@@ -20,7 +20,7 @@ int val_14 = 1'000'000;
 EXPECT_TRUE(val == val_14);
 ```
 
-## 2. ½º¸¶Æ® Æ÷ÀÎÅÍ
+## 2. ìŠ¤ë§ˆíŠ¸ í¬ì¸í„°
 ```cpp
 #include <memory> 
 class Widget { 
@@ -39,7 +39,7 @@ void functionUsingWidget() { widget w(1000000); }
 // automatic destruction and deallocation for w and w.data
 ```
 
-## 3. STL ÄÁÅ×ÀÌ³Ê¸¦ À§ÇÑ vector
+## 3. STL ì»¨í…Œì´ë„ˆë¥¼ ìœ„í•œ vector
 ```cpp
 // Example1 
 vector<string> apples; 
@@ -52,93 +52,93 @@ apple_color["Granny Smith"] = "Green";
 ```
 
 
-## 4. STL ¾Ë°í¸®Áò
+## 4. STL ì•Œê³ ë¦¬ì¦˜
 ```cpp
 auto comp = [](const widget& w1, const widget& w2) { return w1.widget() < w2.widget(); } 
 sort( v.begin(), v.end(), comp ); 
 auto i = lower_bound( v.begin(), v.end(), comp ); 
-// lower_bound´Â Ã£À¸·Á´Â key °ªº¸´Ù °°°Å³ª Å« ¼ıÀÚ °¡ ¹è¿­ ¸î ¹øÂ°¿¡¼­ Ã³À½ µîÀå ÇÏ´ÂÁö Ã£±â À§ÇÔ
+// lower_boundëŠ” ì°¾ìœ¼ë ¤ëŠ” key ê°’ë³´ë‹¤ ê°™ê±°ë‚˜ í° ê°’ì´ ì²˜ìŒ ë‚˜íƒ€ë‚˜ëŠ” ë°°ì—´ ë‚´ ìœ„ì¹˜ë¥¼ ë°˜í™˜í•©ë‹ˆë‹¤.
 ```
 
 
-## 5. auto¿Í decltype
+## 5. autoì™€ decltype
 ### (1) auto
 ```cpp
-// auto´Â ¹è¿­À» Æ÷ÀÎÅÍ·Î, ÃÖ»óÀ§ const´Â ¹«½ÃÇÏ°í, ÂüÁ¶¼ºÀ» Á¦°ÅÇÏ¿© Ãß·Ğ
+// autoëŠ” ë°°ì—´ì„ í¬ì¸í„°ë¡œ, ìµœìƒìœ„ constëŠ” ë¬´ì‹œí•˜ê³ , ì°¸ì¡°ì„±ì„ ì œê±°í•˜ì—¬ ì¶”ë¡ 
 map<int, list<string>>::iterator i = m.begin(); // C-style 
 auto i = m.begin(); // modern C++
 
-// auto´Â ÇÔ¼ö ÀÎÀÚ·Î »ç¿ë ºÒ°¡
+// autoëŠ” í•¨ìˆ˜ ì¸ìë¡œ ì‚¬ìš© ë¶ˆê°€
 double Func_11(int a, auto b) {
     return a + b;   
 }
 
-// auto·Î ÇÔ¼ö ¸®ÅÏ Å¸ÀÔ Ãß·Ğ °¡´É
+// autoëŠ” í•¨ìˆ˜ ë°˜í™˜ íƒ€ì… ì¶”ë¡  ê°€ëŠ¥
 auto Add1_14(int a, int b) {
      return a + b;
 }
-int result1 = Add1_14(10, 20); // int¸¦ ¸®ÅÏ
+int result1 = Add1_14(10, 20); // intë¡œ ë¦¬í„´
 ```
 ### (2) decltype
 ```cpp
-//decltypeÀº °ıÈ£ÀÇ °³Ã¼ÀÇ Å¸ÀÔ ±×´ë·Î Ãß·Ğ
+//decltypeì€ ê´„í˜¸ ë‚´ ê°ì²´ì˜ íƒ€ì… ê·¸ëŒ€ë¡œ ì¶”ë¡ 
 int a = 0;
 const int b = 0;
 
-decltype(a) c_11 = a; // a¿Í µ¿ÀÏÇÑ int·Î Ãß·ĞµÊ
-decltype(b) d_11 = a; // b¿Í µ¿ÀÏÇÑ const int·Î Ãß·ĞµÊ
+decltype(a) c_11 = a; // aì™€ ë™ì¼í•œ intë¡œ ì¶”ë¡ 
+decltype(b) d_11 = a; // bì™€ ë™ì¼í•œ const intë¡œ ì¶”ë¡ 
 
-// decltypeÀº ÇÔ¼ö ÀÎÀÚ·Î »ç¿ë °¡´É
+// decltypeì„ í•¨ìˆ˜ ì¸ìë¡œ ì‚¬ìš© ê°€ëŠ¥
 template<typename T, typename U>
- void Func_11(T a, U b, decltype(a + b)* result) { // a + b´Â int
+ void Func_11(T a, U b, decltype(a + b)* result) { // a + bëŠ” int
      *result = a + b;
 }
 
-//Ãß·Ğ Ç¥Çö½ÄÀÌ º¹ÀâÇÒ °æ¿ì decltype(auto) »ç¿ë °¡´É
+//ì¶”ë¡  í‘œí˜„ì‹ì´ ë³µì¡í•  ê²½ìš° decltype(auto) ì‚¬ìš© ê°€ëŠ¥
 int Func(int a, int b) {
     return a + b;
 }
-decltype(auto) d_14 = Func(10, 20); // Ãß·Ğ ±ÔÄ¢Àº decltypeÀ» µû¸§
-decltype(auto) d_14 = {1, 2, 3}; // (X) ÄÄÆÄÀÏ ¿À·ù. Áß°ıÈ£ º¹»ç ÃÊ±âÈ­´Â Ãß·ĞÇÏÁö ¸øÇÔ.
+decltype(auto) d_14 = Func(10, 20); //ì¶”ë¡  ë°©ì‹ì€ decltypeê³¼ ë™ì¼
+decltype(auto) d_14 = {1, 2, 3}; // (X) ì»´íŒŒì¼ ì˜¤ë¥˜. ì¤‘ê´„í˜¸ ë³µì‚¬ ì´ˆê¸°í™”ëŠ” ì¶”ë¡ í•˜ì§€ ëª»í•¨.
 
-// decltype(auto)·Î ÇÔ¼ö ¸®ÅÏ Å¸ÀÔ Ãß·Ğ °¡´É
+// decltype(auto)ë¡œ í•¨ìˆ˜ ë¦¬í„´ íƒ€ì… ì¶”ë¡  ê°€ëŠ¥
 decltype(auto) Add3_14(int a, int b) {
      const int result = a + b;
 
      return result; 
  }
- const int result3 = Add3_14(10, 20); // const int ¸®ÅÏ. ¸®ÅÏÇÏ´Â result Å¸ÀÔ°ú µ¿ÀÏ
+ const int result3 = Add3_14(10, 20); // const int ë¦¬í„´. ë¦¬í„´í•˜ëŠ” result íƒ€ì…ê³¼ ë™ì¼
 ```
 
 ## 6. using
 ```cpp
-// C++11 ÀÌÀü
+// C++11 ì´ì „
 typedef unsigned int uint;
 typedef pair<int, string> pis;
 typedef double da10[10];
 typedef void (*func)(int);
 
-// C++11 ÀÌÈÄ
+// C++11 ì´í›„
 using uint = unsigned int;
 using pis = pair<int, string>;
 using da10 = double[10];
 using func = void(*)(int);
 
-// ÅÛÇÃ¸´ º°Äª
+// í…œí”Œë¦¿ ë³„ì¹­
 template<typename T>
 using matrix1d = vector<T>;
 
-// »ç¿ë ¿¹½Ã
+// ì˜ˆì‹œ í™œìš©
 da10 arr {};
 matrix1d<float> vec(3);
-matrix1d<int> vec(5); // Å¸ÀÔ º¯°æ °¡´É
+matrix1d<int> vec(5); // íƒ€ì… ë³€í™˜ ê°€ëŠ¥
 
 void my_function(int n) { cout << n << endl; }
 func fp = &my_function; 
 ```
 
-## 7. ¹üÀ§±â¹İ ¹İº¹¹®
-### (1) ÀÏ¹İÀûÀÎ ¹üÀ§±â¹İ ¹İº¹¹®
+## 7. ë²”ìœ„ ê¸°ë°˜ ë°˜ë³µë¬¸
+### (1) ì¼ë°˜ì ì¸ ë²”ìœ„ ê¸°ë°˜ ë°˜ë³µë¬¸
 ```cpp
 #include <iostream> 
 #include <vector> 
@@ -158,18 +158,18 @@ int main() {
 }
 ```
 
-### (2) ÃÊ±â½ÄÀÌ Á¸ÀçÇÏ´Â ¹üÀ§±â¹İ ¹İº¹¹®
+### (2) ì´ˆê¸°ì‹ì´ ì¡´ì¬í•˜ëŠ” ë²”ìœ„ ê¸°ë°˜ ë°˜ë³µë¬¸
 ```cpp
 int sum{0};
 
-// ÃÊ±â½ÄÀ¸·Î v_20 º¤ÅÍ¸¦ ÃÊ±âÈ­ ÈÄ ¹üÀ§ ±â¹İ ¹İº¹À» ¼öÇà
+// ì´ˆê¸°ì‹ìœ¼ë¡œ v_20 ë²¡í„°ë¥¼ ì´ˆê¸°í™” í›„ ë²”ìœ„ ê¸°ë°˜ ë°˜ë³µì„ ìˆ˜í–‰
 for (std::vector<int> v_20{1, 2, 3}; int val : v_20) {
     sum += val;
 }
 ```
 
 
-## 8. ¸ÅÅ©·Î ´ë½Å constexpr »ç¿ë
+## 8. ë§¤í¬ë¡œ ëŒ€ì‹  constexpr ì‚¬ìš©
 ```cpp
 // C-style
 #define SIZE 10 
@@ -178,7 +178,7 @@ constexpr int size = 10;
 ```
 
 
-## 9. {}¸¦ ÀÌ¿ëÇÑ ÀÏ°üµÈ ÃÊ±âÈ­
+## 9. {}ë¥¼ ì´ìš©í•œ ì¼ê´€ëœ ì´ˆê¸°í™”
 ```cpp
 #include <vector> 
 struct S { 
@@ -209,53 +209,53 @@ int main() {
 ```
 
 
-## 10. ÇÔ¼ö °´Ã¼ »ı¼ºÀ» À§ÇÑ ¶÷´Ù½Ä
+## 10. í•¨ìˆ˜ ê°ì²´ ìƒì„±ì„ ìœ„í•œ ëŒë‹¤ í‘œí˜„ì‹
 ```cpp
 std::vector<int> v {1,2,3,4,5}; 
 int x = 2;
 int y = 4; 
-auto result = find_if(begin(v), end(v), [=](int i) { return i > x && i <y; }); //[=]Àº ¿ÜºÎÀÇ ¸ğµç º¯¼ö¸¦ const·Î °¡Á®¿È
+auto result = find_if(begin(v), end(v), [=](int i) { return i > x && i <y; }); //[ì‹]ëŠ” ì™¸ë¶€ì˜ ëª¨ë“  ë³€ìˆ˜ë¥¼ constí˜•ìœ¼ë¡œ ê°€ì ¸ì˜µë‹ˆë‹¤.
 ```
 
 
-## 11. ¸í½ÃÀû Çüº¯È¯À» À§ÇÑ explicit
-### (1) ÀÏ¹İÀûÀÎ explicit »ç¿ë¹ı
+## 11. ì•”ì‹œì  ë³€í™˜ ë°©ì§€ë¥¼ ìœ„í•œ explicit
+### (1) ì¼ë°˜ì ì¸ explicit í™œìš©
 ```cpp
 class T {
 public:
-    // ¾Ï½ÃÀû Çüº¯È¯ÀÌ µË´Ï´Ù.
+    // ì•”ì‹œì  ë³€í™˜ì„ í—ˆìš©í•©ë‹ˆë‹¤.
     operator bool() const {return true;}
 };
 
 class T_11 {
 public:
-    // ¸í½ÃÀûÀ¸·Î¸¸ Çüº¯È¯ µË´Ï´Ù.
+    // ëª…ì‹œì ìœ¼ë¡œë§Œ ë³€í™˜ì„ í—ˆìš©í•©ë‹ˆë‹¤.
     explicit operator bool() const {return true;} 
 };
 
 T t;
 int val1{t}; 
-// (¡â) ºñ±ÇÀå. bool()À» ÀÌ¿ëÇÏ¿© Çüº¯È¯ ÇÏ°í ¾Ï½ÃÀûÀ¸·Î int·Î º¯È¯ÇÕ´Ï´Ù.
-// ¿¹»óÄ¡ ¸øÇÑ ¿À·ù³ª µ¿ÀÛ ¹ß»ı °¡´É
+// (â–³) ë¹„ê¶Œì¥. bool()ì„ ì´ìš©í•˜ì—¬ í˜•ë³€í™˜ í•˜ê³  ì•”ì‹œì ìœ¼ë¡œ intë¡œ ë³€í™˜í•©ë‹ˆë‹¤.
+// ì˜ˆìƒì¹˜ ëª»í•œ ì˜¤ë¥˜ë‚˜ ë™ì‘ ë°œìƒ ê°€ëŠ¥
 
 T_11 t_11;
-int val2{t_11}; // (X) ÄÄÆÄÀÏ ¿À·ù
+int val2{t_11}; // (X) ì»´íŒŒì¼ ì˜¤ë¥˜
 bool val3{static_cast<bool>(t_11)}; 
-// ¸í½ÃÀûÀ¸·Î º¯È¯ÇØ¾ß »ç¿ëÇÒ ¼ö ÀÖ½À´Ï´Ù.
+// ëª…ì‹œì ìœ¼ë¡œë§Œ ë³€í™˜í•´ì•¼ ì‚¬ìš©í•  ìˆ˜ ìˆìŠµë‹ˆë‹¤.
 ```
 
-### (2) Æ¯Á¤ Å¸ÀÔ¿¡¸¸ ¾Ï½ÃÀû Çüº¯È¯ Â÷´ÜÇÏ±â
+### (2) íŠ¹ì • íƒ€ì…ì—ë§Œ ì•”ì‹œì  í˜•ë³€í™˜ ì°¨ë‹¨í•˜ê¸°
 ```cpp
 class A_20 {
     T m_Val;
 public:
-    // Á¤¼ö Å¸ÀÔÀÎ °æ¿ì¸¸ explicitÇÕ´Ï´Ù.
+    // ì •ìˆ˜ íƒ€ì…ì¸ ê²½ìš°ì—ë§Œ explicití•©ë‹ˆë‹¤.
     explicit(std::is_integral<T>::value) A_20(T val) : m_Val{val} {}
 };
 
 A_20<int> a{0};
-A_20<int> b = 0; // (X) ÄÄÆÄÀÏ ¿À·ù. explicit·Î Â÷´ÜÇß½À´Ï´Ù.
+A_20<int> b = 0; // (X) ì»´íŒŒì¼ ì˜¤ë¥˜. explicitë¡œ ì°¨ë‹¨í–ˆìŠµë‹ˆë‹¤.
 
 A_20<std::string> c{"Hello"};
-A_20<std::string> d = std::string{"World"}; // (O) Á¤¼ö Å¸ÀÔÀÌ ¾Æ´Ï¾î¼­ ¾Ï½ÃÀû Çüº¯È¯À» Çã¿ëÇÕ´Ï´Ù.
+A_20<std::string> d = std::string{"World"}; // (O) ì •ìˆ˜ íƒ€ì…ì´ ì•„ë‹ˆì–´ì„œ ì•”ì‹œì  í˜•ë³€í™˜ì„ í—ˆìš©í•©ë‹ˆë‹¤.
 ```
